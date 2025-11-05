@@ -1,0 +1,400 @@
+/* ------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------- GLOBALS -----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+
+body {
+  font-family: TS-Reg, sans-serif;
+}
+
+.container {
+  width: 1135px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: "TS-Med", sans-serif;
+  color: #ff5d5d;
+  margin-bottom: 10px;
+}
+h1 > span {
+  color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------- HEADER -----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+
+header {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+header img {
+  width: 190px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 30px;
+}
+
+header nav > div:hover {
+  background-color: lightgray;
+}
+
+header nav > button {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  font-family: TS-Reg, sans-serif;
+  border: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------- HERO -----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+
+.baseline {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 40px;
+}
+.baseline span {
+  text-decoration: underline;
+}
+
+menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+menu > div {
+  border: 1px solid black;
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------- IMAGES -----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+.images {
+  display: flex;
+  height: 430px;
+  gap: 2px;
+}
+.images > img {
+  flex: 4;
+  height: 100%;
+  object-fit: cover;
+}
+.images > div {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2px;
+}
+.images > div > img {
+  height: calc(50% - 1px);
+  object-fit: cover;
+}
+
+div {
+  cursor: grab;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+--------------------------------------------- SOUS LES 3 IMAGES ------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+
+.visiter {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+.fil-ariane {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+.fil-ariane i {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.speech {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.topo {
+  flex: 1;
+}
+.topo h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "TS-Reg", sans-serif;
+  margin-bottom: 20px;
+}
+.topo p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  width: 530px;
+  font-family: "Georgia";
+}
+
+.creer-voyage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vouscreez {
+  background-color: #f25c5d;
+  color: white;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  width: 430px;
+  height: 280px;
+}
+.vouscreez h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "TS-Reg", sans-serif;
+  color: black;
+}
+.vouscreez p {
+  font-size: 15px;
+  font-family: "TS-Med", sans-serif;
+  color: black;
+}
+.vouscreez button {
+  font-weight: 500;
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: black;
+  font-size: 15px;
+  color: white;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+}
+.vouscreez button:hover {
+  background-color: #333;
+}
+
+.creer-voyage img {
+  width: 430px;
+  height: 190px;
+  border-radius: 0 0 20px 20px;
+  object-fit: cover;
+  margin-top: -1px;
+}
+
+@media (max-width: 1024px) {
+  .speech {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topo p {
+    width: 100%;
+  }
+  .vouscreez,
+  .creer-voyage img {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+--------------------------------------------- LES IMMANQUABLES ------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+.immanquables h2 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 0.6px;
+  font-family: "TS-Reg";
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.se-divertir {
+  display: flex;
+}
+
+.se-divertir h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.se-divertir p {
+  font-size: 18px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  line-height: 22px;
+  margin: 20px 0;
+}
+
+.se-divertir link {
+  font-size: 16px;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  line-height: 18px;
+  color: #545454;
+}
+
+.imglieu {
+  width: 250px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.lieux {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.lieux > div {
+  flex-shrink: 0;
+}
+
+.inpicture1 {
+  position: relative;
+}
+
+.inpicture1 img[alt="trip"] {
+  width: 30px;
+  height: auto;
+  margin-left: 8px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.inpicture1 i {
+  position: absolute;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  right: 10px;
+  top: 10px;
+}
+
+.inpicture2 {
+  position: relative;
+}
+
+.inpicture2 img[alt="trip"] {
+  width: 30px;
+  height: auto;
+  margin-left: 8px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.inpicture2 i {
+  position: absolute;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  right: 10px;
+  top: 10px;
+}
+.inpicture3 {
+  position: relative;
+}
+
+.inpicture3 img[alt="trip"] {
+  width: 30px;
+  height: auto;
+  margin-left: 8px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.inpicture3 i {
+  position: absolute;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 15px;
+  right: 10px;
+  top: 10px;
+}
+
+.descript-activity {
+  flex-wrap: nowrap;
+}
+.descript-activity h5 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.descript-activity p {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: darkgrey;
+  font-family: "TS-Reg", Arial, Helvetica, sans-serif;
+}
+
+.descript-activity img {
+  width: 120px;
+  height: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
