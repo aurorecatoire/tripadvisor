@@ -10,13 +10,14 @@ body {
   font-family: TS-Reg, sans-serif;
 }
 
-.extra {
+.menu > .extra {
   display: none;
 }
 
 .container {
   width: 1135px;
   margin: 0 auto;
+  flex: 1 1 auto;
 }
 
 h1 {
@@ -179,10 +180,10 @@ div {
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
-  margin-top: 50px;
 }
 
 .topo {
+  margin-left: 10px;
   flex: 1;
 }
 .topo h2 {
@@ -204,6 +205,7 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 90px;
 }
 
 .vouscreez {
@@ -250,18 +252,15 @@ div {
   margin-top: -1px;
 }
 
-@media (max-width: 1024px) {
-  .speech {
-    flex-direction: column;
-    align-items: center;
-  }
-  .topo p {
-    width: 100%;
-  }
-  .vouscreez,
-  .creer-voyage img {
-    width: 100%;
-  }
+.speech {
+  align-items: center;
+}
+.topo p {
+  width: 100%;
+}
+.vouscreez,
+.creer-voyage img {
+  width: 100%;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------
@@ -377,7 +376,7 @@ div {
 
 .event {
   display: flex;
-  gap: 20px; /* espace entre les div */
+  gap: 20px;
 }
 
 .event > div {
@@ -387,9 +386,8 @@ div {
 }
 
 .event > div img {
-  width: 100%; /* l'image remplit la largeur du div */
-  height: 50%; /* l'image remplit la hauteur du div */
-  object-fit: cover; /* l'image garde son ratio */
+  width: 100%;
+  object-fit: cover;
 }
 
 .guide h4 {
@@ -435,19 +433,55 @@ footer span {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------
----------------------------------------------RESPONSIVE------------------------------------------------
+---------------------------------------------RESPONSIVE 1184------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------ */
 @media (max-width: 1184px) {
   .menu {
     flex-wrap: wrap;
     gap: 10px;
   }
-  .extra {
+  .menu > .extra {
     display: flex;
   }
 
   .menu > div {
     flex: 1 1 calc(100% / 4 - 10px);
     box-sizing: border-box;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+---------------------------------------------RESPONSIVE 1024------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+@media (max-width: 1024px) {
+  nav p {
+    display: none;
+  }
+  .speech {
+    align-items: center;
+    flex-direction: column;
+  }
+  .creer-voyage {
+    flex-direction: row;
+  }
+  .vouscreez {
+    border-radius: 20px 0 0 20px;
+    width: 430px;
+    height: 280px;
+  }
+  .creer-voyage img {
+    width: 430px;
+    height: 280px;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+---------------------------------------------RESPONSIVE 768------------------------------------------------
+------------------------------------------------------------------------------------------------------------------ */
+@media (max-width: 768px) {
+  .creer-voyage {
+    flex-direction: column;
+    align-items: center;
   }
 }
